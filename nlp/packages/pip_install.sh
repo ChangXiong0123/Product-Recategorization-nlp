@@ -46,7 +46,7 @@ function main() {
   # fi
 
   install_pip
-  gsutil cp gs://"${bucket}"/dags/lmedia/dataproc/nlp/packages/spark-nlp-3.3.0.tar.gz .
+  gsutil cp gs://"${bucket}"/nlp/packages/spark-nlp-3.3.0.tar.gz .
   run_with_retry pip install spark-nlp-3.3.0.tar.gz
 }
 
